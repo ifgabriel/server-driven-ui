@@ -9,7 +9,7 @@ const Main = () => {
   if (!searchParams.toString())
     return (
       <BeagleProvider value={BeagleService}>
-        <BeagleRemoteView route="/home.json" />
+        <BeagleRemoteView route="https://server-driven-ui.s3.us-east-2.amazonaws.com/home.json" />
       </BeagleProvider>
     )
 
