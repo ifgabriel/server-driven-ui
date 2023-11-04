@@ -13,7 +13,7 @@ const Title = () => {
     .replace(/\b\w/g, match => match.toUpperCase());
 
   return (
-    <title>Ducks Sport {productSlug && `| ${productSlug}`}</title>
+    <title>SDUI {productSlug && `| ${productSlug}`}</title>
   )
 }
 

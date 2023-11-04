@@ -27,7 +27,7 @@ const Grid = ({ children, ...props }: ComponentProps) => {
 
   return (
     <section className="container mx-auto px-2">
-      <title>Ducks Sports</title>
+      <title>SDUI</title>
       <Breadcrumb />
       {
         {

@@ -47,7 +47,7 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="px-6 py-8 flex flex-wrap item-center justify-center sm:justify-between gap-6">
           <span className="text-md text-zinc-800 sm:text-center sm:whitespace-nowrap">
-            © {currentYear} Ducks Sports. Todos os direitos reservados.
+            © {currentYear} SDUI. Todos os direitos reservados.
           </span>
           <div className="flex gap-4  item-center">
             {social.map((item) => (
