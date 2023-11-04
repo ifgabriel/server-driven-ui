@@ -1,0 +1,52 @@
+{
+  "_beagleComponent_": "custom:container",
+  "children": [
+    {
+      "case": "view",
+      "_beagleComponent_": "beagle:container",
+      "children": [
+        {
+          "_beagleComponent_": "custom:grid",
+          "children": [
+            {
+              "case": "view",
+              "_beagleComponent_": "custom:card",
+              "onPress": [
+                {
+                  "_beagleAction_": "beagle:setContext",
+                  "contextId": "global",
+                  "path": "product",
+                  "value": "@{onPress.slug}"
+                },
+                {
+                  "_beagleAction_": "beagle:openNativeRoute",
+                  "route": "/@{onPress.slug}",
+                  "shouldResetApplication": false
+                }
+              ]
+            },
+            {
+              "case": "loading",
+              "length": 10,
+              "_beagleComponent_": "custom:skeleton",
+              "width": "auto",
+              "height": "400px"
+            },
+            {
+              "case": "empty",
+              "_beagleComponent_": "custom:exceptionState",
+              "title": "Opps! Nenhum resultado encontrado",
+              "description": "Pode ter acabado o estoque desse produto"
+            },
+            {
+              "case": "error",
+              "_beagleComponent_": "custom:exceptionState",
+              "title": "Opps! Infelizmente tivemos um problema",
+              "description": "Tente novamente mais tarde"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
