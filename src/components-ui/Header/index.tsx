@@ -1,5 +1,4 @@
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import Logo from '../../assets/logo.png'
 import { useFetchHeader } from '../../services'
 import { handleDebounce } from '../../utils'
 
@@ -19,13 +18,7 @@ const Header = () => {
     <header className="bg-white">
       <div className="container mx-auto px-6 py-3 flex gap-8 items-center justify-between flex-col md:flex-row">
         <div className="flex gap-3 flex-col sm:flex-row w-full">
-          <img
-            src={Logo}
-            width={160}
-            alt="Ducks Sports"
-            onClick={() => navigate('/', { state: 'reset' })}
-            className="hidden sm:block object-cover mr-8 sm:mr-0 cursor-pointer"
-          />
+          <div />
           <nav className="flex gap-4 justify-center">
             <ul className="flex items-center justify-center font-semibold gap-3">
               {data?.genders?.map((gender) => (
