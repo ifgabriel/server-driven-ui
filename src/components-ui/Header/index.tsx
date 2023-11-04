@@ -29,7 +29,7 @@ const Header = () => {
                   >
                     {gender.name}
                   </span>
-                  <div className="absolute top-5 left-10 right-10 sm:-left-48 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 sm:min-w-[360px] transform">
+                  <div className="absolute top-5 left-0 right-0 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 sm:min-w-[360px] transform">
                     <div className="relative top-6 p-6 bg-white rounded-xl shadow-xl w-full">
                       <div className="relative z-10">
                         <div className="grid grid-cols-2 gap-9">
@@ -72,9 +72,7 @@ const Header = () => {
           className="w-full md:w-auto lg:min-w-[500px] px-4 py-2 text-zinc-800 bg-slate-100/70 border border-zinc-100 rounded"
           placeholder="Procure"
           onChange={handleDebounce((event) => {
-            if (event.target.value.trim()) {
-              handleSearchParams('name', event.target.value)
-            }
+            handleSearchParams('name', event.target.value)
           })}
         />
       </div>

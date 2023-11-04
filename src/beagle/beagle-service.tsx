@@ -27,7 +27,7 @@ const inYourFace: NavigationController = {
 
 export default createBeagleUIService({
   defaultNavigationController: inYourFace,
-  baseUrl: '/pages',
+  baseUrl: 'https://server-driven-ui.s3.us-east-2.amazonaws.com',
   components: {
     'custom:grid': Grid,
     'custom:card': Card,
